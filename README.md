@@ -1,1 +1,1 @@
-# crazyflie2_1_brushless
+# Crazyflie 2.1 Brushless
