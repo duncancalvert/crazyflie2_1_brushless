@@ -13,7 +13,7 @@
 1. Follow the [following instructions](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/)
 
 ### Update your Flow Deck firmware
-1. Note - the Crazyflie 2.1 Brushless firmware is ""
+1. IMPORTANT NOTE - the Crazyflie 2.1 Brushless firmware is "cf21bl"
 
 ### Issue with Firmware Flashing
 1. See here for [Recovery Mode](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/recovery-mode/)
