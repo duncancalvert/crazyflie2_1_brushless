@@ -3,19 +3,16 @@
 Welcome to the **Crazyflie 2.1 Brushless** repository!  
 This repo contains setup notes, troubleshooting tips, and resources for working with the brushless Crazyflie 2.1 nano quadcopter.  
 
----
 
 ## Authors
 * Duncan Calvert
 * Zachary Farahany
 * Steve Barry
 
----
 
 ## Contributing
 Feel free to fork this repository, submit pull requests, or open issues with suggestions and improvements. If you find this helpful, consider giving it a ⭐ to support the project!
 
----
 
 ## Installation
 
@@ -48,7 +45,6 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
 ### Issue with Firmware Flashing
 1. See here for [Recovery Mode](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/recovery-mode/)
 
----
 
 ## Light Indicators
 From the crazyflie [light indicators page](https://crazyflie-docs.readthedocs.io/en/latest/getting_started/light_indicators.html)
@@ -71,7 +67,6 @@ From the crazyflie [light indicators page](https://crazyflie-docs.readthedocs.io
 * 🔴 Red = Transmitting but not receiving
 * 🔴🟢 Red + Green = Drone is flying
 
----
 
 ### Simulation Environments
 CrazySim
