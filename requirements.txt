@@ -1,0 +1,7 @@
+# Crazyflie client
+PyOpenGL_accelerate
+cfclient
+cflib
+
+# General Purpose
+numpy
