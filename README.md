@@ -38,3 +38,7 @@
 * 1 green light = the radio is transmitting and receiving data correctly
 * 1 red light = the radio is transmitting data but is not receiving anything
 * 1 red + 1 green = drone is flying
+
+### CrazySim
+* [CrazySim: A Software-in-the-Loop Simulator for the Crazyflie Nano Quadrotor](https://github.com/gtfactslab/CrazySim)
+* [CrazySim - Bitcraze Article](https://www.bitcraze.io/2024/04/crazysim-a-software-in-the-loop-simulator-for-the-crazyflie/)
