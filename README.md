@@ -26,15 +26,6 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
    * cfheadless
    * cfloader
    * cfzmq
-  
-### Install the CFClient UI
-1. Navigate to the [Installation Instructions](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/installation/install/) page
-2. Run python3 -m pip install cfclient
-3. When you have installed the client according to the instructions below, you can run the clients with the following commands:
-    * cfclient
-    * cfheadless
-    * cfloader
-    * cfzmq
 
 ### Update your Crazyradio firmware
 1. Follow the [following instructions](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/)
