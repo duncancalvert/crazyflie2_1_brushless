@@ -7,7 +7,7 @@ This repo contains setup notes, troubleshooting tips, and resources for working 
 ## Authors
 * Duncan Calvert
 * Zachary Farahany
-* Steve Barry
+* [Steve Barry](https://github.com/steviebuchicago)
 
 
 ## Contributing
@@ -15,7 +15,7 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
 
 ## Installation
 
-### Install the CFClient UI
+### Install the CFClient globally
 1. Navigate to the [Installation Instructions](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/installation/install/) page.  
 2. Run:
    ```bash
