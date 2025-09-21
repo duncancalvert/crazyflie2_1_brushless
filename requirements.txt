@@ -7,3 +7,4 @@ cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@3a35d22026c2ed8
 # General Purpose
 numpy
 python-dotenv
+pynput
