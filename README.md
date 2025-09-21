@@ -27,6 +27,10 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
    * cfloader
    * cfzmq
 
+### Install a virtual env
+```bash
+uv venv 
+
 ### Update your Crazyradio firmware
 1. Follow the [following instructions](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/)
 
