@@ -33,6 +33,18 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
 ### Update your Flow Deck firmware
 1. IMPORTANT NOTE - the Crazyflie 2.1 Brushless firmware is "cf21bl" NOT "cf2". You will brick your drone and have to restart in Recovery Mode if you flash the cf2 firmware.
 
+### Install All Dependecies
+* Create a virtual env
+* Run:
+   ```bash
+   uv pip install -r requirements.txt
+
+### Create a .env file in your repo
+* Add your radio URI to it. For Crazyflie 2.1 your radio can be found via the cfclient and generally comes in the form of 'radio://0/80/2M/E7E7E7E7E8'
+* Example:
+   ```bash
+   RADIO_URI='radio://0/80/2M/E7E7E7E7E8'
+
 ### Issue with Firmware Flashing
 1. See here for [Recovery Mode](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/recovery-mode/)
 
