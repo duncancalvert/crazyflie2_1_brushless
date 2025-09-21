@@ -27,6 +27,11 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
    * cfloader
    * cfzmq
 
+### Install uv
+* Run:
+   ```bash
+   pip install uv
+
 ### Install a virtual env
 * Run: 
    ```bash
