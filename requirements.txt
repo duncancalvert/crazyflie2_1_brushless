@@ -1,6 +1,5 @@
 # Crazyflie client
 PyOpenGL_accelerate
-cfclient
 cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@3a35d22026c2ed8251b821e4f5b10e67091f811f
 
 
