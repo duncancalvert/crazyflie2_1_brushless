@@ -28,8 +28,9 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
    * cfzmq
 
 ### Install a virtual env
-```bash
-uv venv 
+* Run: 
+   ```bash
+   uv venv 
 
 ### Update your Crazyradio firmware
 1. Follow the [following instructions](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/)
@@ -38,7 +39,6 @@ uv venv
 1. IMPORTANT NOTE - the Crazyflie 2.1 Brushless firmware is "cf21bl" NOT "cf2". You will brick your drone and have to restart in Recovery Mode if you flash the cf2 firmware.
 
 ### Install All Dependecies
-* Create a virtual env
 * Run:
    ```bash
    uv pip install -r requirements.txt
