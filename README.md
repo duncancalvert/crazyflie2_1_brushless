@@ -16,7 +16,7 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
 
 ## Installation
 
-### Install the CFClient globally
+### Install the CFClient Globally
 1. Navigate to the [Installation Instructions](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/installation/install/) page.  
 2. Run:
    ```bash
@@ -28,7 +28,7 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
    * cfloader
    * cfzmq
 
-### Install uv
+### Install uv Package Manager
 * Run:
    ```bash
    pip install uv
@@ -43,17 +43,19 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
    uv pip install -r requirements.txt
 
 
-### Update your Crazyradio firmware
+### Update the Crazyradio Firmware
 * Follow the [following instructions](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/)
 
 
-### Update your Deck Firmware
+### Update Different Deck Firmwares
 * IMPORTANT NOTE - the Crazyflie 2.1 Brushless firmware is "cf21bl" NOT "cf2". You will brick your drone and have to restart in Recovery Mode if you flash the "cf2" firmware.
 * If you have issues with firmware flashing, see here for how to boot into [Recovery Mode](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/recovery-mode/)
 
 #### Flow Deck
+* 
 
 #### AI Deck
+* For installation and flashing instructions, see [Getting Started with the AI Deck](https://www.bitcraze.io/documentation/tutorials/getting-started-with-aideck/)
 
 #### Lighthouse Deck
 
@@ -65,10 +67,8 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
    RADIO_URI='radio://0/80/2M/E7E7E7E7E8'
 
 
-## Light Indicators
+## Drone Light Indicators
 From the crazyflie [light indicators page](https://crazyflie-docs.readthedocs.io/en/latest/getting_started/light_indicators.html)
-
-### Drone Lights
 * 🔵🔵 Two blue = Running correctly
 * 🔴🟠 One red + one orange = Error
 * 🔴 (fast flashing) = Battery critically low (flash speed reflects level)
@@ -81,13 +81,7 @@ From the crazyflie [light indicators page](https://crazyflie-docs.readthedocs.io
    * Restart the Crazyflie if that is the case (and debug).
    * Note: If one Crazyflie does not connect for no apparent reason, then restart it. It may be stuck in an internal loop.
 
-### Crazyradio Lights
+## Crazyradio Light Indicators
 * 🟢 Green = Transmitting and receiving correctly
 * 🔴 Red = Transmitting but not receiving
 * 🔴🟢 Red + Green = Drone is flying
-
-
-### Simulation Environments
-CrazySim
-* [CrazySim: A Software-in-the-Loop Simulator for the Crazyflie Nano Quadrotor](https://github.com/gtfactslab/CrazySim)
-* [CrazySim - Bitcraze Article](https://www.bitcraze.io/2024/04/crazysim-a-software-in-the-loop-simulator-for-the-crazyflie/)
