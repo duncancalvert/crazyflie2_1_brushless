@@ -5,8 +5,8 @@ This repo contains setup notes, troubleshooting tips, and resources for working 
 
 
 ## Authors
-* Duncan Calvert
-* Zachary Farahany
+* [Duncan Calvert](https://github.com/duncancalvert)
+* [Zachary Farahany]()
 * [Steve Barry](https://github.com/steviebuchicago)
 
 
