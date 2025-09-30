@@ -9,13 +9,10 @@ This repo contains setup notes, troubleshooting tips, and resources for working 
 * [Zachary Farahany](https://github.com/zachfara)
 * [Steve Barry](https://github.com/steviebuchicago)
 
----
-
 
 ## Contributing
 Feel free to fork this repository, submit pull requests, or open issues with suggestions and improvements. If you find this helpful, consider giving it a ⭐ to support the project!
 
----
 
 ## Installation
 
@@ -45,27 +42,23 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
    ```bash
    uv pip install -r requirements.txt
 
----
 
 ### Update your Crazyradio firmware
 * Follow the [following instructions](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/)
 
----
 
 ### Update your Deck Firmware
 * IMPORTANT NOTE - the Crazyflie 2.1 Brushless firmware is "cf21bl" NOT "cf2". You will brick your drone and have to restart in Recovery Mode if you flash the "cf2" firmware.
-* 
+* If you have issues with firmware flashing, see here for how to boot into [Recovery Mode](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/recovery-mode/)
+
 #### Flow Deck
 
 #### AI Deck
 
-#### 
-
-### Issue with Firmware Flashing
-1. See here for [Recovery Mode](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/recovery-mode/)
+#### Lighthouse Deck
 
 
-### Create a .env file in your repo
+### Create a .env File in Your Repo
 * Add your radio URI to it. For Crazyflie 2.1 your radio can be found via the cfclient and generally comes in the form of 'radio://0/80/2M/E7E7E7E7E8'
 * Example:
    ```bash
