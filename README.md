@@ -9,9 +9,13 @@ This repo contains setup notes, troubleshooting tips, and resources for working 
 * [Zachary Farahany](https://github.com/zachfara)
 * [Steve Barry](https://github.com/steviebuchicago)
 
+---
+
 
 ## Contributing
 Feel free to fork this repository, submit pull requests, or open issues with suggestions and improvements. If you find this helpful, consider giving it a ⭐ to support the project!
+
+---
 
 ## Installation
 
@@ -32,21 +36,30 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
    ```bash
    pip install uv
 
-### Install a virtual env
-* Run: 
+### Create a Virtual Env and Install All Dependecies
+* To create a uv virtual env, run: 
    ```bash
-   uv venv 
+   uv venv
 
-### Install All Dependecies
 * Run:
    ```bash
    uv pip install -r requirements.txt
 
-### Update your Crazyradio firmware
-1. Follow the [following instructions](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/)
+---
 
-### Update your Flow Deck firmware
-1. IMPORTANT NOTE - the Crazyflie 2.1 Brushless firmware is "cf21bl" NOT "cf2". You will brick your drone and have to restart in Recovery Mode if you flash the cf2 firmware.
+### Update your Crazyradio firmware
+* Follow the [following instructions](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/)
+
+---
+
+### Update your Deck Firmware
+* IMPORTANT NOTE - the Crazyflie 2.1 Brushless firmware is "cf21bl" NOT "cf2". You will brick your drone and have to restart in Recovery Mode if you flash the "cf2" firmware.
+* 
+#### Flow Deck
+
+#### AI Deck
+
+#### 
 
 ### Issue with Firmware Flashing
 1. See here for [Recovery Mode](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/recovery-mode/)
