@@ -50,10 +50,17 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
    uv pip install -r requirements.txt
 
 
-### 4. Update the Crazyradio Firmware
+### 4. Update the Crazyradio 2.0 Firmware
 * Follow the [following instructions](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/)
 * Note, you will need to update the Crazyradio firmware before updating any deck firmware
 
+<br>
+
+<div align="center">
+<img src="media/crazyradio_2_0.jpg" alt="The Crazyradio 2.0" width="40%"/>
+</div>
+
+<br>
 
 ### 5. Update Different Deck Firmwares
 * IMPORTANT NOTE - the Crazyflie 2.1 Brushless firmware is "cf21bl" NOT "cf2". You will brick your drone and have to restart in Recovery Mode if you flash the "cf2" firmware.
@@ -74,6 +81,7 @@ The Flow deck lets the drone understand what direction it is moving, hover, and 
 
 
 #### AI Deck
+The AI deck enables WiFi communication as well as onboard neural network processing using the power-efficient GAP8 board. The AI deck also comes with a connected black and white camera with the option of upgrading to a color camera.
 * For installation and flashing instructions, see [Getting Started with the AI Deck](https://www.bitcraze.io/documentation/tutorials/getting-started-with-aideck/)
 
 <br>
@@ -93,6 +101,12 @@ The Lighthouse positioning system uses a combination of the ground-mounted Steam
 
 <div align="center">
 <img src="media/crazyflie_lighthouse_deck.jpg" alt="The Crazyflie Lighthouse Deck" width="40%"/>
+</div>
+
+<br>
+
+<div align="center">
+<img src="media/crazyflie_lighthouse_base_stations.png" alt="The Crazyflie Lighthouse Positioning System" width="60%"/>
 </div>
 
 <br>
