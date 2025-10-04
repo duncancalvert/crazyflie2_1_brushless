@@ -5,7 +5,7 @@ This repo contains setup notes, troubleshooting tips, and resources for working 
 
 <br>
 
-<img src="media/crazyflie_drone_top_view.png" alt="A top-down view of the Crazyflie brushless 2.1 drone showing rotor directions" width="100%"/>
+<img src="media/crazyflie_drone_top_view.png" alt="A top-down view of the Crazyflie brushless 2.1 drone showing rotor directions" width="60%"/>
 
 <br>
 
