@@ -67,7 +67,7 @@ The Flow deck lets the drone understand what direction it is moving, hover, and 
 <br>
 
 <div align="center">
-<img src="media/crazyflie_flow_deck.jpg" alt="The Crazyflie Flow Deck" width="60%"/>
+<img src="media/crazyflie_flow_deck.jpg" alt="The Crazyflie Flow Deck" width="40%"/>
 </div>
 
 <br>
@@ -79,7 +79,7 @@ The Flow deck lets the drone understand what direction it is moving, hover, and 
 <br>
 
 <div align="center">
-<img src="media/crazyflie_ai_deck.jpg" alt="The Crazyflie AI Deck" width="60%"/>
+<img src="media/crazyflie_ai_deck.jpg" alt="The Crazyflie AI Deck" width="40%"/>
 </div>
 
 <br>
@@ -92,7 +92,7 @@ The Lighthouse positioning system uses a combination of the ground-mounted Steam
 <br>
 
 <div align="center">
-<img src="media/crazyflie_lighthouse_deck.jpg" alt="The Crazyflie Lighthouse Deck" width="60%"/>
+<img src="media/crazyflie_lighthouse_deck.jpg" alt="The Crazyflie Lighthouse Deck" width="40%"/>
 </div>
 
 <br>
