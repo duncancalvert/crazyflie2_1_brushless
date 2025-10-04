@@ -3,6 +3,19 @@
 Welcome to the **Crazyflie 2.1 Brushless** repository!  
 This repo contains setup notes, troubleshooting tips, and resources for working with the brushless Crazyflie 2.1 nano quadcopter.  
 
+<br>
+
+<div class="row mt-3">
+  <div class="col-sm mt-3 mt-md-0">
+      {% include figure.liquid loading="eager" path="media/crazyflie_drone_top_view.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+  </div>
+</div>
+<div class="caption">
+   A top-down view of the Crazyflie brushless 2.1 drone showing rotor directions
+</div>
+
+<br>
+
 
 ## Authors
 * [Duncan Calvert](https://github.com/duncancalvert)
@@ -52,16 +65,20 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
 * IMPORTANT NOTE - the Crazyflie 2.1 Brushless firmware is "cf21bl" NOT "cf2". You will brick your drone and have to restart in Recovery Mode if you flash the "cf2" firmware.
 * If you have issues with firmware flashing, see here for how to boot into [Recovery Mode](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/recovery-mode/)
 
+
 #### Flow Deck
 The Flow deck lets the drone understand what direction it is moving, hover, and abstracts away the need to write low-level stabilization controls. Importantly, unlike the Lighthouse deck, it does not include a global positioning system, meaning the longer the drone flies, the larger the possible X, Y, Z error rate.
 * For installation and flashing instructions, see [Getting Started with the Flow Deck](https://www.bitcraze.io/documentation/tutorials/getting-started-with-flow-deck/)
 
+
 #### AI Deck
 * For installation and flashing instructions, see [Getting Started with the AI Deck](https://www.bitcraze.io/documentation/tutorials/getting-started-with-aideck/)
+
 
 #### Lighthouse Deck
 The Lighthouse positioning system uses a combination of the ground-mounted SteamVR Base stations and the drone-mounted Lighthouse deck. This allows the Crazyflie to estimate its X, Y and Z positions in a global coordinate system with a high degree of accuracy.
 * For installationa and setup instructions see [Getting started with the Lighthouse system](https://www.bitcraze.io/documentation/tutorials/getting-started-with-lighthouse/)
+
 
 ### 6. Create a .env File in Your Repo
 * Add your radio URI to it. For Crazyflie 2.1 your radio can be found via the cfclient and generally comes in the form of 'radio://0/80/2M/E7E7E7E7E8'
