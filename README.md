@@ -16,7 +16,7 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
 
 ## Installation
 
-### Install the CFClient Globally
+### 1. Install the CFClient Globally
 1. Navigate to the [Installation Instructions](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/installation/install/) page.  
 2. Run:
    ```bash
@@ -28,12 +28,12 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
    * cfloader
    * cfzmq
 
-### Install uv Package Manager
+### 2. Install uv Package Manager
 * Run:
    ```bash
    pip install uv
 
-### Create a Virtual Env and Install All Dependecies
+### 3. Create a Virtual Env and Install All Dependecies
 * To create a uv virtual env, run: 
    ```bash
    uv venv
@@ -43,11 +43,12 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
    uv pip install -r requirements.txt
 
 
-### Update the Crazyradio Firmware
+### 4. Update the Crazyradio Firmware
 * Follow the [following instructions](https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyradio-2-0/)
+* Note, you will need to update the Crazyradio firmware before updating any deck firmware
 
 
-### Update Different Deck Firmwares
+### 5. Update Different Deck Firmwares
 * IMPORTANT NOTE - the Crazyflie 2.1 Brushless firmware is "cf21bl" NOT "cf2". You will brick your drone and have to restart in Recovery Mode if you flash the "cf2" firmware.
 * If you have issues with firmware flashing, see here for how to boot into [Recovery Mode](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/recovery-mode/)
 
@@ -60,7 +61,7 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
 #### Lighthouse Deck
 
 
-### Create a .env File in Your Repo
+### 6. Create a .env File in Your Repo
 * Add your radio URI to it. For Crazyflie 2.1 your radio can be found via the cfclient and generally comes in the form of 'radio://0/80/2M/E7E7E7E7E8'
 * Example:
    ```bash
