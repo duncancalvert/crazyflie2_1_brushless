@@ -5,14 +5,7 @@ This repo contains setup notes, troubleshooting tips, and resources for working 
 
 <br>
 
-<div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-      {% include figure.liquid loading="eager" path="media/crazyflie_drone_top_view.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-  </div>
-</div>
-<div class="caption">
-   A top-down view of the Crazyflie brushless 2.1 drone showing rotor directions
-</div>
+<img src="media/crazyflie_drone_top_view.png" alt="A top-down view of the Crazyflie brushless 2.1 drone showing rotor directions" width="100%"/>
 
 <br>
 
