@@ -28,13 +28,13 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
 2. Run:
    ```bash
    python3 -m pip install cfclient
+
 3. Once installed, you can run the clients with:
    ```bash
    * cfclient
    * cfheadless
    * cfloader
    * cfzmq
-
 ### 2. Install uv Package Manager
 * Run:
    ```bash
