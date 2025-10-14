@@ -63,9 +63,26 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
 <br>
 
 ### 5. Update Different Deck Firmwares
-* IMPORTANT NOTE - the Crazyflie 2.1 Brushless firmware is "cf21bl" NOT "cf2". You will brick your drone and have to restart in Recovery Mode if you flash the "cf2" firmware.
-* If you have issues with firmware flashing, see here for how to boot into [Recovery Mode](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/recovery-mode/)
 
+#### Issues with Crazyflie Firmware Flashing
+* <ins>Crazyflie 2.1 Brushless Name</ins>: the firmware is "cf21bl" NOT "cf2". You will brick your drone and have to restart in Recovery Mode if you flash the "cf2" firmware.
+* 🔵🔵 Two blue (not flashing) = issues with firmware (generally easy to recover with the below steps)
+* 🔵 One blue (not flashing) = issues with nRF51 chip (harder to recover, requires )
+
+
+#### Booting Into Recovery Mode & Reflashing Firmware
+* If you have issues with firmware flashing, you'll have to boot into [recovery mode](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/recovery-mode/) and reflash the correct software
+* To boot into recovery mode and reflash the drone, do the following:
+   * Disconnect the drone from all power sources (usb and battery)
+   * Hold down the power button for 3 seconds and reconnect either of the power sources
+   * The two blue lights should alternatively flash, signaling that you're in recovery mode
+   * Plug in your crazyradio
+   * Boot the cfclient by typing "cfclient" in your computer's terminal
+   * On the top navigation, click "Connect" -> "Bootloader"
+   * In the popup window tab over to "Cold boot (recovery)
+   * Choose "Initate bootloader, cold boot". You should see a message letting you know that the drone has successfully entered bootloader mode
+   * Load new firmware using either the file loader or autoloader option and click "Program"
+   * Your drone should now be fixed
 
 #### Flow Deck
 The Flow deck lets the drone understand what direction it is moving, hover, and abstracts away the need to write low-level stabilization controls. Importantly, unlike the Lighthouse deck, it does not include a global positioning system, meaning the longer the drone flies, the larger the possible X, Y, Z error rate.
@@ -121,13 +138,14 @@ The Lighthouse positioning system uses a combination of the ground-mounted Steam
 
 ## Drone Light Indicators
 From the crazyflie [light indicators page](https://crazyflie-docs.readthedocs.io/en/latest/getting_started/light_indicators.html)
-* 🔵🔵 Two blue = Running correctly
+* 🔵 One blue (not flashing) = issues with nRF51 chip
+* 🔵🔵 Two blue (not flashing) = issues with firmware
+* 🔵🔵 (alternating flashing) = Recovery mode
 * 🔴🟠 One red + one orange = Error
-* 🔴 (fast flashing) = Battery critically low (flash speed reflects level)
-* 🔴🔵🔵 (steady) = Low battery
+* 🔴🔵🔵 (red flashing steady) = Low battery
+* 🔴🔵🔵 (red flashing fast) = Battery critically low
 * 🟢🔵🔵 (flashing) = Receiving commands
 * 🟢🟠 Green + orange = Drone is sending info
-* 🔵🔵 (flashing) = Firmware flashing mode
 * 🔴 (5 short pulses + pause) = Self-test failed
    * It could be because of an assert fail(runtime error, i.e. divided by 0), which would be printed in the console. 
    * Restart the Crazyflie if that is the case (and debug).
@@ -137,3 +155,24 @@ From the crazyflie [light indicators page](https://crazyflie-docs.readthedocs.io
 * 🟢 Green = Transmitting and receiving correctly
 * 🔴 Red = Transmitting but not receiving
 * 🔴🟢 Red + Green = Drone is flying
+
+
+## Crazyflie Components & Chips
+* [STM32F405 ARM chip (Main Crazyflie processing)](https://www.st.com/en/microcontrollers-microprocessors/stm32f405-415.html): A Cortex-M4 processor running at 168 MHz, with 192kb of SRAM and 1Mb of flash memory.
+   * The chip is located at the center bottom of the Crazyflie
+   * The two chips communicate using the syslink protocol, with the STM32F405 acting as the master and the nRF51822 as the slave
+* [nRF51822 Chip (Radio and Power Management)](https://en.wikipedia.org/wiki/NRF51_series): part of the nRF51 series of System-on-Chips (SoC) from Nordic Semiconductor. 
+   * SoCs are integrated circuit that combines a processor (MCU), memory, and wireless communication peripherals (like Wi-Fi or Bluetooth) onto a single chip. 
+   * The nRF51822 has a Cortex-M0 processor running at 32 MHz, with 16kb of SRAM and 128kb of flash memory. 
+* <ins>White battery connector cord</ins>: JST-PH 2.0 (also called “Micro JST”) connector is used to plug in the single-cell LiPo battery that powers the Crazyflie.
+* <ins>Expansion deck connector</ins>: a 2×10 2.54 mm (0.1”) male pin connector
+   * Purpose: Provides power, I²C, SPI, UART, GPIO, and other signals from the main MCU
+   * Used for:
+      * Flow Deck (optical flow + distance sensor)
+      * Lighthouse Deck (for SteamVR tracking)
+      * AI Deck (camera + ESP32)
+      * Multi-ranger Deck, Loco positioning, etc.
+* SWD (Serial Wire Debug) / UART connector: the white 6-pin connector on the bottom of the Crazyflie. 
+   * Used for low-level programming and debugging of the STM32 microcontroller with a debugger such as the ST-Link V2 or J-Link
+   * The 6-pin white port on the Crazyflie 2.1 uses a JST-SH 1.0 mm pitch connector, not the more common 1.25 mm (Molex PicoBlade) or 2.54 mm header types.
+
