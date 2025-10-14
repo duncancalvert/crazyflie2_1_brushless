@@ -163,7 +163,7 @@ From the crazyflie [light indicators page](https://crazyflie-docs.readthedocs.io
    * The two chips communicate using the syslink protocol, with the STM32F405 acting as the master and the nRF51822 as the slave
 * [nRF51822 Chip (Radio and Power Management)](https://en.wikipedia.org/wiki/NRF51_series): part of the nRF51 series of System-on-Chips (SoC) from Nordic Semiconductor. 
    * SoCs are integrated circuit that combines a processor (MCU), memory, and wireless communication peripherals (like Wi-Fi or Bluetooth) onto a single chip. 
-   * The nRF51822 has a Cortex-M0 processor running at 32 MHz, with 16kb of SRAM and 128kb of flash memory. 
+   * The nRF51822 hass a Cortex-M0 processor running at 32 MHz, with 16kb of SRAM and 128kb of flash memory. 
 * <ins>White battery connector cord</ins>: JST-PH 2.0 (also called “Micro JST”) connector is used to plug in the single-cell LiPo battery that powers the Crazyflie.
 * <ins>Expansion deck connector</ins>: a 2×10 2.54 mm (0.1”) male pin connector
    * Purpose: Provides power, I²C, SPI, UART, GPIO, and other signals from the main MCU
