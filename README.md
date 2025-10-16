@@ -62,12 +62,12 @@ Feel free to fork this repository, submit pull requests, or open issues with sug
 
 <br>
 
-### 5. Update Different Deck Firmwares
+### 5. Expansion Decks & Deck Firmware Updates
 
 #### Issues with Crazyflie Firmware Flashing
 * <ins>Crazyflie 2.1 Brushless Name</ins>: the firmware is "cf21bl" NOT "cf2". You will brick your drone and have to restart in Recovery Mode if you flash the "cf2" firmware.
 * 🔵🔵 Two blue (not flashing) = issues with firmware (generally easy to recover with the below steps)
-* 🔵 One blue (not flashing) = issues with nRF51 chip (harder to recover, requires )
+* 🔵 One blue (not flashing) = issues with nRF51 chip (harder to recover, requires specialized cables)
 
 
 #### Booting Into Recovery Mode & Reflashing Firmware
