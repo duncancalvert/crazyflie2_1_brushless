@@ -4,6 +4,12 @@ Welcome to the **Crazyflie 2.1 Brushless Lighthouse Positioning System Guide**! 
 
 The Lighthouse positioning system uses a combination of the ground-mounted SteamVR Base stations and the drone-mounted Lighthouse deck. This allows the Crazyflie to estimate its X, Y and Z positions in a global coordinate system with a high degree of accuracy.
 
+## References:
+* [Getting started with the Lighthouse system](https://www.bitcraze.io/documentation/tutorials/getting-started-with-lighthouse/)
+* [The Lighthouse positioning system](https://www.bitcraze.io/documentation/repository/crazyflie-firmware/master/functional-areas/lighthouse/)
+* [The Lighthouse Positioning Tab](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/userguide_client/lighthouse_tab/)
+* [Lighthouse GitHub Examples](https://github.com/bitcraze/crazyflie-lib-python/tree/master/examples/lighthouse)
+
 
 <br>
 
@@ -50,9 +56,6 @@ This guide assumes that you have installed all the general dependecies for the C
 * Make sure that the Crazyflie is receiving the sweep angels of both base stations and has received the calibration data. You'll know that this is successful if the rectangles are green for both "Receiving" and "Calibration" for channels 1 and 2
    * For the calibration data you might need to wait for 20 seconds.
 
-<div align="center">
-<img src="media/lighthouse_deck_readme_basestation_status.png" alt="Lighthouse Deck Calibration" width="40%"/>
-</div>
 
 ### 9. Estimate Geometry
 Once you have received the calibration data, it is time to estimate where the base stations are located
@@ -60,11 +63,3 @@ Once you have received the calibration data, it is time to estimate where the ba
 * In the dialog, press ‘Estimate Geometry’ (not ‘Manage geometry simple’). Please follow the wizard’s instructions for estimating the geometry. The wizard will ask you to move the drone around in various positions to ensure it gets a proper read of its location.
 * If the geometry makes sense, press ‘Write to Crazyflie’, or else move your Crazyflie and press ‘Estimate Geometry’ again.
 * Once this is done, all Lighthouse deck lights should be green for both channel 1 and 2 and the base stations and drone should show up on the visualization.
-
-
-
-## References:
-* [Getting started with the Lighthouse system](https://www.bitcraze.io/documentation/tutorials/getting-started-with-lighthouse/)
-* [The Lighthouse positioning system](https://www.bitcraze.io/documentation/repository/crazyflie-firmware/master/functional-areas/lighthouse/)
-* [The Lighthouse Positioning Tab](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/userguide_client/lighthouse_tab/)
-* 

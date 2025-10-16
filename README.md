@@ -176,3 +176,5 @@ From the crazyflie [light indicators page](https://crazyflie-docs.readthedocs.io
    * Used for low-level programming and debugging of the STM32 microcontroller with a debugger such as the ST-Link V2 or J-Link
    * The 6-pin white port on the Crazyflie 2.1 uses a JST-SH 1.0 mm pitch connector, not the more common 1.25 mm (Molex PicoBlade) or 2.54 mm header types.
 
+### Reference Materials
+* [All Crazyflie GitHub Repositories](https://www.bitcraze.io/documentation/repository/)
